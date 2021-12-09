@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Colores de la aplicacion-->
+    <color name="primary_blue">#FF108CEC</color>
+    <color name="secondary_blue">#FF0D4B7B</color>
+    <color name="dark_blue">#FF042354</color>
+    <color name="light_blue">#FF2293C4</color>
+
+
+    <!--Colores basicos-->
+    <color name="red">#FFF62A2A</color>
+    <color name="grey">#FF616161</color>
+    <color name="light_grey">#FFEBEBEB</color>
+    <color name="green">#FF0F830D</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
