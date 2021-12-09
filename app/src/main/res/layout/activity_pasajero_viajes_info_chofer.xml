@@ -22,7 +22,8 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="394dp"
-        android:layout_height="144dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="640dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,7 +62,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="Button" />
+            android:text="Regresar"
+            tools:ignore="TextContrastCheck" />
 
     </LinearLayout>
 

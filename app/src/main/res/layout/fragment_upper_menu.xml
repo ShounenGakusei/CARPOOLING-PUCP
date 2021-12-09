@@ -10,9 +10,20 @@
         android:id="@+id/tb_menuSuperior"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?attr/colorPrimary"
+        android:background="@color/light_blue"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:navigationIcon="@drawable/ic_baseline_menu_24"
         app:title="Viajes" />
+
+    <ImageView
+        android:id="@+id/img_logout"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:contentDescription="@string/logout"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+        android:translationX="340dp"
+        android:translationY="10dp"
+        tools:ignore="ImageContrastCheck" />
+
 </FrameLayout>

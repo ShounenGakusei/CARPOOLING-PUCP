@@ -1,22 +1,25 @@
 package pe.edu.pucp.carpooling_pucp
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.MotionEvent
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ListView
-import android.widget.Toast
+import android.widget.*
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import pe.edu.pucp.carpooling_pucp.databinding.ActivityPasajeroViajesRutasBinding
 import pe.edu.pucp.carpooling_pucp.models.ChoferModel
 import pe.edu.pucp.carpooling_pucp.utils.RutasCardAdapter
 import java.util.*
 import kotlin.collections.ArrayList
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager.SpanSizeLookup
 
-class PasajeroViajes_rutas : AppCompatActivity(), AdapterView.OnItemClickListener {
 
-    private var adapter: RutasCardAdapter? =null
-    private var arrayList:ArrayList<ChoferModel>?= null
+class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListener{
+
+    //lateinit var adapter: BaseAdapter
 
     private lateinit var binding: ActivityPasajeroViajesRutasBinding
 
@@ -25,24 +28,23 @@ class PasajeroViajes_rutas : AppCompatActivity(), AdapterView.OnItemClickListene
         binding = ActivityPasajeroViajesRutasBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val listView = binding.listRutasDistrito
-        arrayList = ArrayList()
-        arrayList = setDataList()
-        adapter = RutasCardAdapter(applicationContext, arrayList!!)
-        listView.adapter = adapter
 
-        binding.btRegresar.setOnClickListener {
-            val myIntent = Intent(this, PasajeroViajes_infoChofer::class.java)
-            startActivity(myIntent)
-        }
+        val list = setDataList()
+        val recyclerView: RecyclerView = binding.recyclerView
 
-        listView.setOnItemClickListener { parent, view, position, id ->
-            val myIntent = Intent(this, PasajeroViajes_infoChofer::class.java)
-            startActivity(myIntent)
-        }
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        val adapter = RutasCardAdapter(list, this@PasajeroViajes_rutas::onItemClickHandler)
+
+        recyclerView.adapter = adapter
+        recyclerView.setHasFixedSize(false)
 
     }
 
+    private fun onItemClickHandler(position:Int){
+        val myIntent = Intent(this, PasajeroViajes_infoChofer::class.java)
+        startActivity(myIntent)
+
+    }
 
     private fun setDataList():ArrayList<ChoferModel>{
         var listItem : ArrayList<ChoferModel> = ArrayList()
@@ -98,10 +100,12 @@ class PasajeroViajes_rutas : AppCompatActivity(), AdapterView.OnItemClickListene
     }
 
     override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-
-        var item: ChoferModel = arrayList?.get(position)!!
-        Toast.makeText(applicationContext, item.nombre, Toast.LENGTH_LONG).show()
-        val myIntent = Intent(this, PasajeroViajes_infoChofer::class.java)
-        startActivity(myIntent)
+        return
     }
+
+
+
 }
+
+
+

@@ -3,7 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+    android:clickable="false"
+    android:focusable="false"
+    >
+
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,6 +20,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="# Asientos libre"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/precioRefCard"
             app:layout_constraintHorizontal_bias="0.625"
@@ -31,6 +39,9 @@
             android:backgroundTint="#C31F1F"
             android:clickable="false"
             android:contentDescription="Valoracion del Chofer"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:focusedByDefault="false"
             android:rating="4.5"
             android:scaleX="0.45"
             android:scaleY="0.45"
@@ -46,6 +57,9 @@
             android:layout_width="86dp"
             android:layout_height="94dp"
             android:contentDescription="Foto del Chofer"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/id_nombreChofer1"
             app:layout_constraintHorizontal_bias="0.291"
@@ -64,6 +78,9 @@
             android:textAlignment="viewStart"
             android:textColor="@color/black"
             android:textSize="16sp"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.529"
@@ -76,6 +93,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Precio referencial"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.82"
@@ -88,6 +108,9 @@
             android:layout_width="221dp"
             android:layout_height="17dp"
             android:text="Nombre del chofer"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.717"
@@ -103,9 +126,13 @@
             android:text="Descripcion de la ruta a realizar"
             android:textAlignment="center"
             android:textColor="@color/black"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:focusable="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/id_horaChofer1" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

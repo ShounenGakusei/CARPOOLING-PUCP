@@ -9,5 +9,6 @@
     <string name="viajes_a_la_pucp">Viajes a la PUCP</string>
     <string name="viajes_desde_la_pucp">Viajes desde la PUCP</string>
     <string name="regresar">Regresar</string>
+    <string name="logout">Logout</string>
 
 </resources>

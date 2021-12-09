@@ -22,7 +22,7 @@ class PasajeroViajes_infoChofer : AppCompatActivity() {
         binding.txtVehiculo.text = "Descripcion del vehiculo"
         binding.imgMediosPago.setImageResource(R.drawable.logo)
 
-        binding.btSiguiente.setOnClickListener {
+        binding.btFinalizar.setOnClickListener {
             val myIntent = Intent(this, PasajeroViajes_puntoO::class.java)
             startActivity(myIntent)
         }

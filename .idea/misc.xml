@@ -8,6 +8,7 @@
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.19315068493150686" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.19315068493150686" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/drawable/ic_baseline_comment_24.xml" value="0.19315068493150686" />
+        <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.19315068493150686" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.19315068493150686" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/drawable/ic_baseline_remove_circle_24.xml" value="0.19315068493150686" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.19315068493150686" />
@@ -22,7 +23,7 @@
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/activity_pasajero_viajes_distritos.xml" value="0.25" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/activity_pasajero_viajes_info_chofer.xml" value="0.16" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/activity_pasajero_viajes_punto_o.xml" value="0.22" />
-        <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/activity_pasajero_viajes_rutas.xml" value="0.14537037037037037" />
+        <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/activity_pasajero_viajes_rutas.xml" value="0.25" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/card_info_chofer.xml" value="0.25" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/card_pasajeros_solicitudes.xml" value="0.2" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/card_ruta_distrito.xml" value="0.25" />
@@ -30,7 +31,7 @@
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/card_viajes_ruta_chofer.xml" value="0.25" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/fragment_lista_header.xml" value="0.33" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/fragment_option_button_viajes.xml" value="0.25" />
-        <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/fragment_upper_menu.xml" value="0.14" />
+        <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/layout/fragment_upper_menu.xml" value="0.33" />
         <entry key="..\:/Users/Shounen/Desktop/CicloX/DispMovil/CARPOOLINGPUCP/app/src/main/res/menu/menu_superior.xml" value="0.33" />
       </map>
     </option>
