@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CARPOOLINGPUCP.NoActionBar">
         <activity
+            android:name=".ChoferViajes_AgregarRuta"
+            android:exported="false" />
+        <activity
+            android:name=".ChoferViajes_registrarRuta"
+            android:exported="false" />
+        <activity
+            android:name=".ChoferViajes_Registrar"
+            android:exported="false" />
+        <activity
+            android:name=".choferViajes_Solicitudes"
+            android:exported="false" />
+        <activity
+            android:name=".ChoferViajes_Inicio"
+            android:exported="false" />
+        <activity
             android:name=".PasajeroViajes_confirmacion"
             android:exported="false" />
         <activity
