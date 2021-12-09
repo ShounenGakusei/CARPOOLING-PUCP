@@ -14,13 +14,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+
+
         binding.btLogin.setOnClickListener {
             if (binding.txtUsername.text.toString() =="Chofer"){
                 val myIntent = Intent(this, ChoferViajes_Inicio::class.java)
                 startActivity(myIntent)
             }else{
-                val myIntent = Intent(this, PasajeroViajes_distritos::class.java)
+                val myIntent = Intent(this, ChoferViajes_Inicio::class.java)
                 startActivity(myIntent)
+
+                /*val myIntent = Intent(this, PasajeroViajes_distritos::class.java)
+                startActivity(myIntent)*/
             }
         }
     }

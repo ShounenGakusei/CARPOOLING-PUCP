@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -11,7 +11,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/img_Pasajero"
             android:layout_width="85dp"
             android:layout_height="84dp"
             app:layout_constraintBottom_toTopOf="@+id/txt_estrellas"
@@ -30,17 +30,17 @@
             app:layout_constraintEnd_toStartOf="@+id/txt_origen"
             app:layout_constraintHorizontal_bias="0.31"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintTop_toBottomOf="@+id/img_Pasajero" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/img_estrrellas"
             android:layout_width="20dp"
             android:layout_height="19dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.064"
             app:layout_constraintStart_toEndOf="@+id/txt_estrellas"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/img_Pasajero"
             app:layout_constraintVertical_bias="0.511"
             app:srcCompat="@drawable/ic_baseline_star_24" />
 
@@ -51,7 +51,7 @@
             android:text="Juan Peres"
             app:layout_constraintBottom_toTopOf="@+id/txt_origen"
             app:layout_constraintEnd_toStartOf="@+id/img_comment"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/img_Pasajero"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -59,9 +59,9 @@
             android:layout_width="174dp"
             android:layout_height="55dp"
             android:text="Punto de llegada: Parada 8756"
-            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintBottom_toTopOf="@+id/img_estrrellas"
             app:layout_constraintEnd_toStartOf="@+id/img_comment"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/img_Pasajero"
             app:layout_constraintTop_toBottomOf="@+id/txt_nomb" />
 
         <ImageView
@@ -81,7 +81,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.685"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/img_estrrellas"
             app:layout_constraintTop_toBottomOf="@+id/txt_origen"
             app:layout_constraintVertical_bias="0.428"
             app:srcCompat="@drawable/ic_baseline_check_circle_24" />

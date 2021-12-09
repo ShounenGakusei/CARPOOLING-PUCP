@@ -16,6 +16,11 @@ class ChoferModel {
     var vehiculoModelo:String?="Toyota"
     var vehiculoColor:String?="Blanco"
 
+    //1 = Aceptado
+    //2 = Pendiente
+    //3 = Cancelado
+    var estado:Int? = 1
+
     constructor(
         nombre: String?,
         descripcion: String?,
@@ -38,6 +43,7 @@ class ChoferModel {
         this.vehiculoPlaca = vehiculoPlaca
         this.vehiculoModelo = vehiculoModelo
         this.vehiculoColor = vehiculoColor
+
     }
 
     constructor(
@@ -57,6 +63,22 @@ class ChoferModel {
         this.hora = hora
         this.precioRef = precioRef
     }
+
+    constructor(
+        nombre: String?,
+        descripcion: String?,
+        photoName: Int?,
+        rating: Float?,
+        estado: Int?
+    ) {
+        this.nombre = nombre
+        this.descripcion = descripcion
+        this.photoName = photoName
+        this.rating = rating
+        this.estado = estado
+    }
+
+
 }
 
 fun getCurrentDateTime(): Date {
