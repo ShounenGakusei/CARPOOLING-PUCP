@@ -6,29 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ChoferViajes_Inicio">
 
-    <Button
-        android:id="@+id/bt_agregarViaje"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/border_button"
-        android:text="Agregar Viaje"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:layout_width="398dp"
+        android:layout_width="0dp"
         android:layout_height="141dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView11"
@@ -45,18 +33,42 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleViewRutas"
-        android:layout_width="386dp"
-        android:layout_height="578dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="2dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:clipToPadding="false"
         android:padding="@dimen/cardview_default_elevation"
         android:paddingVertical="@dimen/cardview_default_elevation"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/bt_agregarViaje"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/border_button"
+            android:text="Agregar Viaje"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
