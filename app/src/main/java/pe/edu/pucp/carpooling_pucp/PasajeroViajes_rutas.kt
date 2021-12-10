@@ -53,7 +53,7 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
             ChoferModel(
                 "Juan Carlos",
                 "Salgo desde Las Flores Paradero 10",
-                R.drawable.logo,
+                R.drawable.man1,
                 4,
                 1.5.toFloat(),
                 Date(2021,12,14,10,0,0),
@@ -64,8 +64,9 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
         listItem.add(
             ChoferModel(
                 "Fernando Tarazona",
-                "Salgo desde Las Flores Paradero 5 ",
-                R.drawable.logo,
+                "Parto del paradero 5 de Las Flores, Caja de agua. Luego volteo " +
+                        "por la avenida Wiesse.",
+                R.drawable.man2,
                 4,
                 4.5.toFloat(),
                 Date(2021,12,14,12,0,0),
@@ -76,7 +77,7 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
             ChoferModel(
                 "Paolo Macarlupu",
                 "Salgo desde Los Jardines",
-                R.drawable.logo,
+                R.drawable.man3,
                 1,
                 2.5.toFloat(),
                 Date(2021,12,14,13,0,0),
@@ -87,7 +88,7 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
             ChoferModel(
                 "Maria Felipe",
                 "LLego a la PUCP 32",
-                R.drawable.logo,
+                R.drawable.woman1,
                 2,
                 4.5.toFloat(),
                 Date(2021,12,14,14,0,0),
