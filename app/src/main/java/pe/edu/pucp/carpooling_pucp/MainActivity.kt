@@ -5,6 +5,7 @@ import pe.edu.pucp.carpooling_pucp.databinding.ActivityMainBinding
 import android.os.Bundle
 import android.os.StrictMode
 import android.util.Log
+import android.widget.Toast
 import java.net.URL
 
 class MainActivity : AppCompatActivity() {
@@ -28,21 +29,27 @@ class MainActivity : AppCompatActivity() {
 
 
 
-         binding.btLogin.setOnClickListener {
-        /*
-          //val connection = URL("http://10.0.2.2:8000/clientes/").openConnection() as HttpURLConnection
-          val connection = URL("http://10.0.2.2:8000/clientes/").readText()
-          Log.d("Conection",connection)
-          */
-             if (binding.txtUsername.text.toString() =="Chofer"){
-                 val myIntent = Intent(this, ChoferViajes_Inicio::class.java)
-                 startActivity(myIntent)
-             }else{
+        binding.btLogin.setOnClickListener {
+             var usuario = binding.txtUsername.text.toString()
+             var password = binding.txtPassword.text.toString()
+            if (usuario==""){
+                usuario="Hola"
+            }
+            var urlTemp = "http://10.0.2.2:8000/choferes/user/" + "$usuario" + '/'
+            Log.d("url",urlTemp)
+             val connection = URL(urlTemp).readText()
+            var tempPass = '"' + password + '"'
+             if ( tempPass == connection.toString()){
                  val myIntent = Intent(this, PasajeroViajes_distritos::class.java)
                  startActivity(myIntent)
+             }else{
+                 Toast.makeText(applicationContext,"La contraseña es incorrecta, pruebe con Juan y 123456",Toast.LENGTH_LONG).show()
+
+                 Log.d("Conection", connection +"ad")
+                 //val myIntent = Intent(this, ChoferViajes_Inicio::class.java)
+             //startActivity(myIntent)
              }
+        }
+
          }
-
-
     }
-}
