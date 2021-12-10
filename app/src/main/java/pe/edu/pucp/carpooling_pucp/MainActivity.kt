@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
                 val myIntent = Intent(this, ChoferViajes_Inicio::class.java)
                 startActivity(myIntent)
             }else{
-                val myIntent = Intent(this, ChoferViajes_Inicio::class.java)
+                val myIntent = Intent(this, PasajeroViajes_distritos::class.java)
                 startActivity(myIntent)
 
                 /*val myIntent = Intent(this, PasajeroViajes_distritos::class.java)

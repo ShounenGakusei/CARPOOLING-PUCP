@@ -13,6 +13,16 @@ class ChoferViajes_Registrar : AppCompatActivity() {
         binding = ActivityChoferViajesRegistrarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val idFrame:Int = binding.fragmentContainerView16.id
+        val mFragmentManager = supportFragmentManager
+        val mFragmentTransaction = mFragmentManager.beginTransaction()
+        val mFragment = upperMenu()
+
+        val mBundle = Bundle()
+        mBundle.putBoolean("my_boolean",true)
+        mFragment.arguments = mBundle
+        mFragmentTransaction.add(idFrame, mFragment).commit()
+
         binding.btRegistrarViaje.setOnClickListener{
             val myIntent = Intent(this, ChoferViajes_Inicio::class.java)
             startActivity(myIntent)

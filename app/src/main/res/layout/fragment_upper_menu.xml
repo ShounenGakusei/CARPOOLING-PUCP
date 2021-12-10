@@ -26,4 +26,12 @@
         android:translationY="10dp"
         tools:ignore="ImageContrastCheck" />
 
+    <ImageView
+        android:id="@+id/img_usuario"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:translationX="200dp"
+        android:translationY="10dp" />
+
 </FrameLayout>

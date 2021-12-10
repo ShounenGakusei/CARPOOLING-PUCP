@@ -22,6 +22,16 @@ class choferViajes_Solicitudes : AppCompatActivity() , AdapterView.OnItemClickLi
         binding = ActivityChoferViajesSolicitudesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val idFrame:Int = binding.fragmentContainerView13.id
+        val mFragmentManager = supportFragmentManager
+        val mFragmentTransaction = mFragmentManager.beginTransaction()
+        val mFragment = upperMenu()
+
+        val mBundle = Bundle()
+        mBundle.putBoolean("my_boolean",true)
+        mFragment.arguments = mBundle
+        mFragmentTransaction.add(idFrame, mFragment).commit()
+
         val listAceptados = setDataListAceptados()
         val recyclerViewAceptados: RecyclerView = binding.rvAceptados
         recyclerViewAceptados.layoutManager = LinearLayoutManager(this)

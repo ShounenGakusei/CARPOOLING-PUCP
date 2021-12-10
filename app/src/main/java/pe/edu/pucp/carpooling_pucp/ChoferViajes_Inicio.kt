@@ -3,18 +3,16 @@ package pe.edu.pucp.carpooling_pucp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import pe.edu.pucp.carpooling_pucp.databinding.ActivityChoferViajesInicioBinding
-import pe.edu.pucp.carpooling_pucp.databinding.ActivityPasajeroViajesRutasBinding
-import pe.edu.pucp.carpooling_pucp.models.ChoferModel
 import pe.edu.pucp.carpooling_pucp.models.RutasModel
 import pe.edu.pucp.carpooling_pucp.utils.RutasCardAdapter
 import pe.edu.pucp.carpooling_pucp.utils.RutasSimpleCardAdapter
 import java.util.*
 import kotlin.collections.ArrayList
 
+private const val MY_BOOLEAN = "my_boolean"
 class ChoferViajes_Inicio : AppCompatActivity() {
 
     private lateinit var binding: ActivityChoferViajesInicioBinding
@@ -23,6 +21,16 @@ class ChoferViajes_Inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityChoferViajesInicioBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val idFrame:Int = binding.fragmentContainerView11.id
+        val mFragmentManager = supportFragmentManager
+        val mFragmentTransaction = mFragmentManager.beginTransaction()
+        val mFragment = upperMenu()
+
+        val mBundle = Bundle()
+        mBundle.putBoolean("my_boolean",true)
+        mFragment.arguments = mBundle
+        mFragmentTransaction.add(idFrame, mFragment).commit()
 
         val list = setDataList()
         val recyclerView: RecyclerView = binding.recycleViewRutas
