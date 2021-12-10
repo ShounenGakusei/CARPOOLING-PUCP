@@ -55,9 +55,9 @@ class choferViajes_Solicitudes : AppCompatActivity() , AdapterView.OnItemClickLi
 
         listItem.add(
             ChoferModel(
-                "Juan Carlos",
-                "LLego a la PUCP55",
-                R.drawable.logo,
+                "Pedro del Campo",
+                "Recogeme en Los Jardines",
+                R.drawable.man2,
                 1.5.toFloat(),
                 1,
             )
@@ -71,9 +71,9 @@ class choferViajes_Solicitudes : AppCompatActivity() , AdapterView.OnItemClickLi
 
         listItem.add(
             ChoferModel(
-                "Juan Carlos",
-                "LLego a la PUCP55",
-                R.drawable.logo,
+                "Marco Aurelio",
+                "Estación Caja de Agua",
+                R.drawable.man3,
                 1.5.toFloat(),
                 2,
             )
@@ -81,9 +81,9 @@ class choferViajes_Solicitudes : AppCompatActivity() , AdapterView.OnItemClickLi
 
         listItem.add(
             ChoferModel(
-                "Simon Lucas",
-                "LLego a la 98877651231",
-                R.drawable.logo,
+                "Maria Teresa",
+                "Puedes recogerme en las FLores cuadra 8 porfis.",
+                R.drawable.woman3,
                 4.5.toFloat(),
                 2,
             )

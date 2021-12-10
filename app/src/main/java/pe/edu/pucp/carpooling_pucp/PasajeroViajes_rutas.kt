@@ -52,7 +52,7 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
         listItem.add(
             ChoferModel(
                 "Juan Carlos",
-                "Salgo desde Las Flores Paradero 10",
+                "Salgo desde Las Flores Paradero 10, paso por todo Flores y Caja de Agua",
                 R.drawable.man1,
                 4,
                 1.5.toFloat(),
