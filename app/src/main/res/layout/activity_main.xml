@@ -10,25 +10,26 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        android:contentDescription="@string/logo_carpooling"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        android:contentDescription="@string/logo_carpooling" />
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/logo" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="523dp"
-        android:layout_marginTop="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
         android:background="@color/dark_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0">
 
 
         <EditText
@@ -38,15 +39,16 @@
             android:background="@color/light_grey"
             android:ems="10"
             android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
             android:textAlignment="viewStart"
             android:textColorHint="@color/black"
             android:textSize="14sp"
-            app:layout_constraintBottom_toTopOf="@+id/txt_password"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName" />
+            app:layout_constraintVertical_bias="0.213" />
 
         <EditText
             android:id="@+id/txt_password"
@@ -55,14 +57,15 @@
             android:background="@color/light_grey"
             android:ems="10"
             android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
             android:textColorHint="@color/black"
             android:textSize="14sp"
-            app:layout_constraintBottom_toTopOf="@+id/bt_login"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_username"
-            android:importantForAutofill="no"
-            android:inputType="textPassword" />
+            app:layout_constraintVertical_bias="0.14" />
 
         <Button
             android:id="@+id/bt_login"
@@ -74,7 +77,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_password" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_password"
+            app:layout_constraintVertical_bias="0.395" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
