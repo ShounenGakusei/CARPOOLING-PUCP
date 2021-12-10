@@ -52,7 +52,7 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
         listItem.add(
             ChoferModel(
                 "Juan Carlos",
-                "LLego a la PUCP55",
+                "Salgo desde Las Flores Paradero 10",
                 R.drawable.logo,
                 4,
                 1.5.toFloat(),
@@ -63,8 +63,8 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
 
         listItem.add(
             ChoferModel(
-                "Pepe Lucas",
-                "LLego a la PUCP44 ",
+                "Fernando Tarazona",
+                "Salgo desde Las Flores Paradero 5 ",
                 R.drawable.logo,
                 4,
                 4.5.toFloat(),
@@ -74,8 +74,8 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
         )
         listItem.add(
             ChoferModel(
-                "Simon Dice",
-                "LLego a la PUCP 11",
+                "Paolo Macarlupu",
+                "Salgo desde Los Jardines",
                 R.drawable.logo,
                 1,
                 2.5.toFloat(),

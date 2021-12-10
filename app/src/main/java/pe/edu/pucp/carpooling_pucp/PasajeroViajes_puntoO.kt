@@ -36,10 +36,10 @@ class PasajeroViajes_puntoO : AppCompatActivity() {
 
     private fun setDataList():ArrayList<String> {
         list = ArrayList()
-        list.add("Mi casa en la cuadra 32 de Maria Av")
-        list.add("Tu casa en la cuadra 32 de Maria Av")
-        list.add("Nuestra casa en la cuadra 32 de Maria Av")
-        list.add("Aquellas casa en la cuadra 32 de Maria Av")
+        list.add("Cuadra 32 de Maria Av")
+        list.add("Paradero 4 Las Flores")
+        list.add("Paradero 7 Los Tulipanes")
+        list.add("Cuadra 7 Los Postes")
         return list
 
     }

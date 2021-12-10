@@ -60,7 +60,7 @@ class ChoferViajes_Inicio : AppCompatActivity() {
             RutasModel(
                 null,
                 "Ruta 32",
-                "Paso pro toda la universitaria",
+                "Paso por toda la universitaria",
                 Date(2021,12,14,10,0,0),
                 3,
                 5,

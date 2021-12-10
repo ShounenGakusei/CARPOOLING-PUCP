@@ -17,8 +17,8 @@ class PasajeroViajes_infoChofer : AppCompatActivity() {
         binding.txtPlaca.text = "FBS-G27"
         binding.txtColor.text = "Blanco"
         binding.txtModelo.text = "Toyota"
-        binding.txtNombConductor.text = "Juan PEPE"
-        binding.txtDescripcion.text = "LLevo desde tu csas hasta la PUCP, y solo te cobro 6 soles, aprovecha esta oferta"
+        binding.txtNombConductor.text = "Juan Carlos"
+        binding.txtDescripcion.text = "Salgo desde Las Flores Paradero 10, paso por todo Flores y Caja de Agua"
         binding.txtVehiculo.text = "Descripcion del vehiculo"
         binding.imgMediosPago.setImageResource(R.drawable.logo)
 
