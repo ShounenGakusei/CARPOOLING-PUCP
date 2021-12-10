@@ -10,5 +10,8 @@
     <string name="viajes_desde_la_pucp">Viajes desde la PUCP</string>
     <string name="regresar">Regresar</string>
     <string name="logout">Logout</string>
+    <string name="aceptados">  LISTA DE ACEPTADOS</string>
+    <string name="pendientes">  LISTA DE PENDIENTES</string>
+
 
 </resources>

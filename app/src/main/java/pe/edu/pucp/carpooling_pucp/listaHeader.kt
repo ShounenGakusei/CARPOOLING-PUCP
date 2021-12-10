@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,6 +18,8 @@ private const val ARG_PARAM2 = "param2"
  * Use the [listaHeader.newInstance] factory method to
  * create an instance of this fragment.
  */
+
+private const val MY_BOOLEAN = "my_boolean"
 class listaHeader : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -33,6 +37,19 @@ class listaHeader : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        val bundle = arguments
+        val message = bundle?.getBoolean(MY_BOOLEAN)
+        val view: View = inflater!!.inflate(R.layout.fragment_lista_header, container, false)
+
+        var cabeza: TextView = view.findViewById(R.id.txt_descpHeader)
+
+        if ((message == false) or (message==null)){
+            cabeza.text="LISTA DE ACEPTADOS"
+        }else{
+            cabeza.text="LISTA DE PENDIENTES"
+        }
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_lista_header, container, false)
     }

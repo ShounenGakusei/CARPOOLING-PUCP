@@ -45,22 +45,24 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentContainerView14"
-                android:name="pe.edu.pucp.carpooling_pucp.listaHeader"
+            <TextView
+                android:id="@+id/tvAcep"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_text"
+                android:text="@string/pendientes" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_aceptados"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <androidx.fragment.app.FragmentContainerView
-                android:id="@+id/fragmentContainerView15"
-                android:name="pe.edu.pucp.carpooling_pucp.listaHeader"
+            <TextView
+                android:id="@+id/tvPend"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_text"
+                android:text="@string/pendientes" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_pendientes"

@@ -59,9 +59,9 @@ class ChoferViajes_Inicio : AppCompatActivity() {
         listItem.add(
             RutasModel(
                 null,
-                "Ruta 32",
-                "Paso por toda la universitaria",
-                Date(2021,12,14,10,0,0),
+                "Ruta 01",
+                "Salgo desde Las Flores Paradero 10, paso por todo Flores y Caja de Agua",
+                Date(2021,12,14,8,0,0),
                 3,
                 5,
                 "San Juan de Lurigancho",
@@ -74,11 +74,11 @@ class ChoferViajes_Inicio : AppCompatActivity() {
         listItem.add(
             RutasModel(
                 null,
-                "Ruta 36",
-                "Paso pro toda la universitaria",
-                Date(2021,12,14,10,0,0),
-                3,
-                5,
+                "Ruta 02",
+                "Salgo desde Las Flores Paradero 10, paso por todo Flores y Caja de Agua",
+                Date(2021,12,14,12,0,0),
+                2,
+                4,
                 "San Juan de Lurigancho",
                 listOf("Juan", "Pepe"),
                 listOf("Simon","Pumba","Teo")
@@ -89,11 +89,11 @@ class ChoferViajes_Inicio : AppCompatActivity() {
         listItem.add(
             RutasModel(
                 null,
-                "Ruta 39",
-                "Paso pro toda la universitaria",
-                Date(2021,12,14,10,0,0),
-                3,
-                5,
+                "Ruta 03",
+                "Salgo desde Las Flores Paradero 10, paso por todo Flores y Caja de Agua",
+                Date(2021,12,14,16,0,0),
+                1,
+                2,
                 "San Juan de Lurigancho",
                 listOf("Juan", "Pepe"),
                 listOf("Simon","Pumba")
@@ -104,11 +104,11 @@ class ChoferViajes_Inicio : AppCompatActivity() {
         listItem.add(
             RutasModel(
                 null,
-                "Ruta 22",
-                "Paso pro toda la universitaria",
-                Date(2021,12,14,10,0,0),
-                3,
-                5,
+                "Ruta 04",
+                "Salgo desde Las Flores Paradero 10",
+                Date(2021,12,14,20,0,0),
+                2,
+                2,
                 "San Juan de Lurigancho",
                 listOf("Juan", "Pepe"),
                 listOf("Simon","Teo")

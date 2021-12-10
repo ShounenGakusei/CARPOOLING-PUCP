@@ -32,6 +32,7 @@ class choferViajes_Solicitudes : AppCompatActivity() , AdapterView.OnItemClickLi
         mFragment.arguments = mBundle
         mFragmentTransaction.add(idFrame, mFragment).commit()
 
+
         val listAceptados = setDataListAceptados()
         val recyclerViewAceptados: RecyclerView = binding.rvAceptados
         recyclerViewAceptados.layoutManager = LinearLayoutManager(this)

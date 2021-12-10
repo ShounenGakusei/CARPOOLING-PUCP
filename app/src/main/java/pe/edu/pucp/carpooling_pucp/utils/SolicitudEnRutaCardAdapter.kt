@@ -1,5 +1,6 @@
 package pe.edu.pucp.carpooling_pucp.utils
 
+import android.content.ClipData
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,9 +29,6 @@ class SolicitudEnRutaCardAdapter   (var items: ArrayList<ChoferModel>, val itemC
 
 
     override fun onBindViewHolder(holder: SolicitudViewHolder, position: Int) {
-        if (items.get(position).estado == 2){
-            return
-        }
         holder.estrellas.text = items.get(position).rating.toString()
         holder.nombre.text = items.get(position).nombre.toString()
         holder.rutaOrigen.text = items.get(position).descripcion.toString()
@@ -41,7 +39,7 @@ class SolicitudEnRutaCardAdapter   (var items: ArrayList<ChoferModel>, val itemC
         holder.imgCheck.setImageResource(R.drawable.ic_baseline_check_circle_24)
         holder.imgComent.setImageResource(R.drawable.ic_baseline_comment_24)
 
-        holder.imgFoto.setImageResource(R.drawable.logo)
+        holder.imgFoto.setImageResource(items.get(position).photoName!!)
 
         if (items.get(position).estado==1){
             holder.imgDecline.isVisible = false
