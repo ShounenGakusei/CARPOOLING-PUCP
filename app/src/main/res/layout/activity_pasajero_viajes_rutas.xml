@@ -8,9 +8,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="393dp"
+        android:layout_width="0dp"
         android:layout_height="136dp"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="27dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
@@ -34,17 +33,18 @@
 
     <LinearLayout
         android:id="@+id/linearLayout12"
-        android:layout_width="400dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <Button
             android:id="@+id/bt_regresar"
-            android:layout_width="398dp"
-            android:layout_height="53dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:background="@color/white"
             android:text="@string/regresar"
             tools:ignore="TextContrastCheck" />
@@ -52,14 +52,15 @@
         <TextView
             android:id="@+id/txt_rutasDistrito"
             android:layout_width="match_parent"
-            android:layout_height="37dp"
+            android:layout_height="24dp"
             android:text="Rutas encontradas" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="392dp"
-        android:layout_height="535dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
@@ -67,7 +68,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="521dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
             android:padding="0dp"
             android:paddingHorizontal="0dp"
