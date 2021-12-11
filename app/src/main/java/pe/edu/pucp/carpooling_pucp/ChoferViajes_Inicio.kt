@@ -62,8 +62,8 @@ class ChoferViajes_Inicio : AppCompatActivity() {
                 "Ruta 01",
                 "Salgo desde Las Flores Paradero 10, paso por todo Flores y Caja de Agua",
                 Date(2021,12,14,8,0,0),
-                3,
-                5,
+                2,
+                4,
                 "San Juan de Lurigancho",
                 listOf("Juan", "Pepe"),
                 listOf("Simon","Pumba","Teo")
@@ -77,8 +77,8 @@ class ChoferViajes_Inicio : AppCompatActivity() {
                 "Ruta 02",
                 "Salgo desde Las Flores Paradero 10, paso por todo Flores y Caja de Agua",
                 Date(2021,12,14,12,0,0),
-                2,
-                4,
+                1,
+                3,
                 "San Juan de Lurigancho",
                 listOf("Juan", "Pepe"),
                 listOf("Simon","Pumba","Teo")

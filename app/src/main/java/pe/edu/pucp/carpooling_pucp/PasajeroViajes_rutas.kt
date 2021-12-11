@@ -70,7 +70,7 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
                 4,
                 4.5.toFloat(),
                 Date(2021,12,14,12,0,0),
-                6.0
+                5.0
             )
         )
         listItem.add(
@@ -81,13 +81,13 @@ class PasajeroViajes_rutas : AppCompatActivity() , AdapterView.OnItemClickListen
                 1,
                 2.5.toFloat(),
                 Date(2021,12,14,13,0,0),
-                6.0
+                5.5
             )
         )
         listItem.add(
             ChoferModel(
                 "Maria Felipe",
-                "LLego a la PUCP 32",
+                "Parto del paradero 5 de Las Flores",
                 R.drawable.woman1,
                 2,
                 4.5.toFloat(),

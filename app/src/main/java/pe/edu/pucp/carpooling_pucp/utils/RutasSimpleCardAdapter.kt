@@ -49,4 +49,5 @@ class RutaViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
     var cantSolicitudes:TextView = itemView.findViewById(R.id.txt_cantPasajeros)
     var distrito:TextView = itemView.findViewById(R.id.txt_distritoChofer)
 
+
 }
